@@ -28,7 +28,7 @@ def keep_alive():
 
 # --- Bot Config ---
 # Your Telegram Bot Token directly in the script
-TOKEN = '8378912980:AAFNFS3m02CcSPKcOHfCIgAQiYklD0URF08'
+TOKEN = os.environ.get('TOKEN')
 CHANNEL_USERNAME = '@JulianNine'
 
 participants = set()
@@ -326,4 +326,5 @@ def main():
 
 if __name__ == '__main__':
     keep_alive()
+
     main()
